@@ -7,4 +7,4 @@ class Class
       # YOUR CODE HERE
     }
   end
-end
+
