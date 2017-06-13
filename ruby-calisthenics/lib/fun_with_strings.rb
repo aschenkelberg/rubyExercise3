@@ -17,11 +17,11 @@ module FunWithStrings
     word = self.split  #separatres the string into a an array of words
     anagrams = []
     word.each do |x|  #  check if sorted words equal other words that are sorted, ignores case
-      nestArray = x.select { |second_word| x.downcase.chars.sort == second_word.downcase.chars.sort }
+      nestArray = word.select { |second_word| x.downcase.chars.sort == second_word.downcase.chars.sort }
       word = word - nestArray  
-      anagrams.push(nestedArray)
+      anagrams.push(nestArray)
     end
-    return groups
+    return anagrams
   end
 end
 

@@ -1,7 +1,7 @@
 require 'dessert'
 require 'byebug'
 
-describe Dessert, do
+describe Dessert do
   describe 'cake' do
     before :each do
       @subject = Dessert.new('cake', 400)
@@ -43,7 +43,7 @@ describe Dessert, do
   end
 end
 
-describe JellyBean, do
+describe JellyBean do
   describe 'when non-licorice' do
     before :each do
       @subject = JellyBean.new('vanilla')
